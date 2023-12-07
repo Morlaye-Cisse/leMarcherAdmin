@@ -9,21 +9,11 @@ import { Observable } from 'rxjs';
   standalone: true,
   imports: [CommonModule, RouterOutlet],
   template: `
-    <!--The content below is only a placeholder and can be replaced.-->
-    <div>
-      <h1>
-        Beinvenue dans Le marcher admin
-      </h1>
-      <ul>
-     <li class="text" *ngFor="let item of items$ | async">
-        {{item.name}}
-     </li>
-</ul>
     <router-outlet></router-outlet>
   `,
   styles: [],
 })
-export class AppComponent {
+export  class AppComponent {
   title = 'leMarcheAdmin';
 
   firestore: Firestore = inject(Firestore)
